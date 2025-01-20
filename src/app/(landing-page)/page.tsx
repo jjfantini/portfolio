@@ -6,7 +6,7 @@ import { Boxes } from "@/components/ui/background-boxes";
 export default function Page() {
   return (
     <section>
-      <Boxes />
+      {/* <Boxes /> */}
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         My Portfolio
       </h1>
