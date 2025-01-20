@@ -7,6 +7,7 @@ export const DATA = {
   url: "https://jenningsfantini.me",
   location: "New York, NY",
   locationLink: "https://www.google.com/maps/place/newyork",
+  about: "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
   description:
     "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
   summary:
