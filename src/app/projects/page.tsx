@@ -30,24 +30,24 @@ export default function ProjectsPage() {
               >
                 <div className="flex flex-col gap-4">
                   <div className="flex justify-between items-center gap-4">
-                    <h3 className="text-xl font-bold text-neutral-200 break-words">
+                    <h3 className="text-xl font-bold text-zinc-900 dark:text-white break-words">
                       {project.title}
                     </h3>
-                    <span className="px-2 py-1 text-xs rounded-full border-[1px] border-neutral-700/50 bg-neutral-800 text-neutral-300">
+                    <span className="px-2 py-1 text-xs rounded-full bg-zinc-200/60 dark:bg-zinc-800/40 text-zinc-900 dark:text-zinc-100">
                       {project.private ? "Private" : "Public"}
                     </span>
                   </div>
-                  <div className="text-sm text-neutral-400">
+                  <div className="text-sm text-zinc-700 dark:text-zinc-400">
                     {project.dates}
                   </div>
-                  <div className="text-neutral-300">
+                  <div className="text-zinc-800 dark:text-zinc-200">
                     {project.description}
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <span 
                         key={tech} 
-                        className="px-2 py-1 text-xs bg-neutral-800 rounded-full text-neutral-300"
+                        className="px-2 py-1 text-xs rounded-full bg-zinc-200/60 dark:bg-zinc-800/40 text-zinc-900 dark:text-zinc-100"
                       >
                         {tech}
                       </span>
