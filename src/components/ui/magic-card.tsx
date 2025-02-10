@@ -2,6 +2,7 @@
 
 import { motion, useMotionTemplate, useMotionValue } from "motion/react";
 import React, { useCallback, useEffect, useRef } from "react";
+import { useTheme } from "next-themes";
 
 import { cn } from "@/lib/utils";
 
@@ -25,6 +26,9 @@ export function MagicCard({
   const cardRef = useRef<HTMLDivElement>(null);
   const mouseX = useMotionValue(-gradientSize);
   const mouseY = useMotionValue(-gradientSize);
+
+  const { theme } = useTheme();
+  const gradientBorderColor = theme === "light" ? "hsl(0, 0%, 95%)" : "hsl(var(--border))";
 
   const handleMouseMove = useCallback(
     (e: MouseEvent) => {
@@ -96,7 +100,7 @@ export function MagicCard({
             radial-gradient(${gradientSize}px circle at ${mouseX}px ${mouseY}px,
               ${gradientFrom}, 
               ${gradientTo}, 
-              hsl(var(--border)) 100%
+              ${gradientBorderColor} 100%
             )
           `,
         }}

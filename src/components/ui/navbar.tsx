@@ -47,7 +47,7 @@ export default function Navbar() {
                     <item.icon className="size-4" />
                   </Link>
                 </TooltipTrigger>
-                <TooltipContent>
+                <TooltipContent className="rounded-xl">
                   <p>{item.label}</p>
                 </TooltipContent>
               </Tooltip>
@@ -71,7 +71,7 @@ export default function Navbar() {
                       <social.icon className="size-4" />
                     </Link>
                   </TooltipTrigger>
-                  <TooltipContent>
+                  <TooltipContent className="rounded-xl">
                     <p>{name}</p>
                   </TooltipContent>
                 </Tooltip>
@@ -85,8 +85,8 @@ export default function Navbar() {
                   <ModeToggle />
                 </div>
               </TooltipTrigger>
-              <TooltipContent>
-                <p>Color Mode</p>
+              <TooltipContent className="rounded-xl">
+                <p>Theme</p>
               </TooltipContent>
             </Tooltip>
           </DockIcon>

@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, FolderIcon } from "lucide-react";
+import { HomeIcon, FolderIcon, BookOpenIcon } from "lucide-react";
 
 export const DATA = {
   name: "Jennings Fantini",
@@ -29,6 +29,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/projects", icon: FolderIcon, label: "Projects" },
+    { href: "/blog", icon: BookOpenIcon, label: "Blog" },
   ],
   contact: {
     email: "hello@example.com",
@@ -115,7 +116,7 @@ export const DATA = {
     {
       title: "humblFINANCE",
       href: "https://humblfinance.io",
-      dates: "Oct 2023 - Present",
+      dates: "Oct 2022 - Present",
       active: true,
       private: true,
       description:
