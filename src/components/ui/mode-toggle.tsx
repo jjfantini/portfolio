@@ -12,10 +12,10 @@ export function ModeToggle() {
       variant="ghost"
       type="button"
       size="icon"
-      className="size-12 text-white hover:text-white hover:bg-white/10"
+      className="size-12 text-zinc-800 dark:text-white hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/80 dark:hover:bg-white/10"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
-      <IconPalette className="size-4 text-white dark:hidden" />
+      <IconPalette className="size-4 text-zinc-800 dark:hidden" />
       <IconPaletteOff className="hidden size-4 text-white dark:block" />
     </Button>
   );
